@@ -73,10 +73,13 @@
             font-size: 1.5rem;
         }
         .small-circle-img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-        }
+    border: 1px solid #888888; 
+    width: 40px; 
+    height: 40px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
         .arrow-down {
             display: flex;
             justify-content: center;
@@ -84,25 +87,29 @@
             color: #cccccc;
         }
         .circle-img {
+            border: 4px solid  #888888;
             width: 100%; 
             height: 100%;
             object-fit: cover; 
-            object-position: center; 
+            object-position: center;
+            border-radius: 50%;
         }
         .circle-bg {
             background-color: #1b1b1b;
         }
         .text-gradient {
-            background: linear-gradient(to right, #fa6e00, #ff0000);
-            -webkit-background-clip: text;
-            color: transparent;
-        }
+    background: linear-gradient(to right, #984300 0%, #FD6F00 46%, #CA5900 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
 <body class="bg-black text-white">
+
     <!-- Halaman Home ya-->
     <header id="Home" class="flex justify-between items-center p-6">
         <div id="intro" class="text-4xl font-bold text-gradient">
@@ -110,12 +117,12 @@
         </div>
         <nav class="space-x-8 flex items-center">
         <a href="#Home" class="nav-link text-xl">Home</a> 
-        <a href="#Skills" class="nav-link text-xl">About me</a> 
-        <a href="#aboutMe" class="nav-link text-xl">Skills</a> 
+        <a href="#Skills" class="nav-link text-xl">Skills</a> 
+        <a href="#aboutMe" class="nav-link text-xl">About me</a> 
         <a href="#contactMeSection" class="nav-link text-xl">Contact</a>
 
             <div class="flex flex-col items-center ml-4">
-                <div class="w-10 h-10 rounded-full overflow-hidden circle-bg">
+                <div class="w-10 h-10 rounded-full overflow-hidden">
                     <img src="IMG_0832 1.png" alt="Small Profile" class="small-circle-img">
                 </div>
             </div>
@@ -140,7 +147,7 @@
             </div>
         </div>
 
-        <div class="w-[450px] h-[450px] rounded-full overflow-hidden circle-bg">
+        <div class="w-[450px] h-[450px] rounded-full overflow-hidden">
             <img src="IMG_0832 1.png" alt="Profile Image" class="circle-img">
         </div>
     </main>
@@ -178,7 +185,7 @@
                 <p class="text-gray-400 text-2xl mt-8">UI/UX Design And Web Development</p>
             </div>
             <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="w-[450px] h-[450px] rounded-full overflow-hidden circle-bg md:mr-80">
+                <div class="w-[450px] h-[450px] rounded-full overflow-hidden md:mr-80">
                     <img src="IMG_0832 1.png" alt="Profile Image" class="circle-img">
                 </div>
                 <div id="aboutMe" class="max-w-md text-gray-400 text-justify ml-4">
